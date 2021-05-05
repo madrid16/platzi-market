@@ -16,5 +16,5 @@ public class Purchase {
     private String paymentMethod;
     private String comment;
     private String state;
-    private List<PurchaseItem> item;
+    private List<PurchaseItem> items;
 }
