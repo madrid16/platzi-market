@@ -3,25 +3,18 @@ package com.platzi.market.persistence.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import java.io.Serializable;
 
-@Entity
+@Embeddable
 @Getter
 @Setter
-@Table(name = "compras_productos")
-public class CompraProducto {
+public class ComprasProductoPK implements Serializable {
 
-    @Id
     @Column(name = "id_compra")
     private Integer idCompra;
 
-    @Id
     @Column(name = "id_producto")
     private Integer idProducto;
-
-    private String cantidad;
-
-    private Double total;
-
-    private Boolean estado;
 }

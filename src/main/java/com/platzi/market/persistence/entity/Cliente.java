@@ -21,7 +21,7 @@ public class Cliente {
 
     private String apellidos;
 
-    private Double celular;
+    private Long celular;
 
     private String direccion;
 
